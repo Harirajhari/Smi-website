@@ -1,0 +1,90 @@
+:root {
+    --theme-orange-color: #ef4f4f;
+}
+
+/* Main section - Full height on desktop, smaller on mobile */
+section.main-article-page.page-title {
+    position: relative;
+    width: 100%;
+    min-height: 40vh; /* Default height for desktop */
+    padding: 8rem 0; /* Reduced padding for better spacing */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Responsive height adjustments for smaller screens */
+@media (max-width: 992px) {
+    section.main-article-page.page-title {
+        min-height: 30vh;
+        padding: 6rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    section.main-article-page.page-title {
+        min-height: 20vh;
+        padding: 4rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    section.main-article-page.page-title {
+        min-height: 10vh;
+        padding: 3rem 0;
+    }
+}
+
+/* Background Image (No Black Bars & No Cropping) */
+section.main-article-page.page-title::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    height: 90%;
+    width: 100%;
+    filter: brightness(.4) blur(0px);
+    background-image: url("../images/articles/back.png");
+    background-size: cover; /* Ensures full cover without black bars */
+    background-position: center; /* Center image to avoid cropping */
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+/* Gradient Text */
+.articlepage .gradientText {
+    color: #f35626;
+    font-weight: 600;
+    background-image: linear-gradient(135deg, var(--theme-primary-color), var(--theme-orange-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Heading - Responsive Font Size */
+section.main-article-page .h1 {
+    position: relative;
+    z-index: 1;
+    letter-spacing: .25rem;
+    color: white;
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 5rem); /* Responsive font size */
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Optional - Text Wrapper for Centering */
+.theme-breadcrumb-box {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+@media (max-width: 576px) {
+    section.main-article-page .h1 {
+        font-weight: 700;
+        font-size: clamp(1.5rem, 5vw, 3rem);
+    }
+}
