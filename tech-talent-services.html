@@ -825,11 +825,136 @@ Icon for services and Projects -->
 </section>
 
 
-
-
 <!-- our global presense end-->
 
+<style>
+  .smi-tt-video{
+  .smi-tech-talent-video-section {
+    background-color: #0d0d0d;
+      display: flex;
+      justify-content: center;
+    margin-bottom: 10px;
+      gap: 20px;
+   
+  }
+  .video-card {
+      position: relative;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      width: 700px;
+      margin-top: 30px;
+  }
+  video {
+      width: 100%;
+      border-radius: 5px;
+  }
+  p {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #d4af37;
+  }
+  .play-pause-btn {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.6);
+      border: none;
+      color: white;
+      font-size: 24px;
+      padding: 15px 20px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: opacity 0.3s;
+  }
+  .play-pause-btn:hover {
+      background: rgba(0, 0, 0, 0.8);
+  }
+  .hide {
+      opacity: 0;
+  }
 
+  @media (max-width: 768px) {
+      .smi-tech-talent-video-section {
+          flex-direction: column; /* Stack videos vertically */
+          align-items: center;
+      }
+      .video-card {
+          width: 90%; /* Make videos take 90% of screen width */
+      }
+
+    
+  }
+
+  /* Mobile View (Max width: 480px) */
+  @media (max-width: 480px) {
+      .video-card {
+          width: 100%; /* Full width for small screens */
+          padding: 10px;
+      }
+      p {
+          font-size: 16px; /* Reduce text size */
+      }
+      .play-pause-btn {
+        top: 30%;
+          font-size: 20px;
+          padding: 10px 15px;
+      }
+  }
+
+}
+</style>
+
+<section class="smi-tt-video">
+  <div class="smi-tech-talent-video-section">
+    <div class="video-card">
+        <video id="video1" controls controlsList="nodownload">
+            <source src="images/Staff-Augmentation-low-res.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button class="play-pause-btn" id="btn1">▶</button>
+        <p>The Single SignOn Partner for Multiple Geos & Project SLA driven IT HR Services</p>
+    </div>
+    <div class="video-card">
+        <video id="video2" controls controlsList="nodownload">
+            <source src="images/yt1s.com-SMI-Technology-LLC-ODC-Capability-Easy-Hiring-Process_360p-1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button class="play-pause-btn" id="btn2">▶</button>
+        <p>SMI Technology LLC- ODC Capability (Easy Hiring Process)</p>
+    </div>
+</div>
+</section>
+
+<script>
+  function togglePlayPause(videoId, btnId) {
+      const video = document.getElementById(videoId);
+      const button = document.getElementById(btnId);
+
+      video.addEventListener("play", () => {
+          button.textContent = "❚❚"; // Pause icon
+          button.classList.add("hide");
+      });
+
+      video.addEventListener("pause", () => {
+          button.textContent = "▶"; // Play icon
+          button.classList.remove("hide");
+      });
+
+      button.addEventListener("click", () => {
+          if (video.paused) {
+              video.play();
+          } else {
+              video.pause();
+          }
+      });
+  }
+
+  togglePlayPause("video1", "btn1");
+  togglePlayPause("video2", "btn2");
+</script>
 
 
 
