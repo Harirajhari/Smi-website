@@ -1141,7 +1141,7 @@ input:checked + .toggle-slider:before {
 .testimonial-box {
     background: #ccc;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 5px;
     max-width: 50%;
     text-align: left;
 }
@@ -1185,7 +1185,7 @@ input:checked + .toggle-slider:before {
     width: 150px;
     height: 150px;
     background: #ccc;
-    border-radius: 8px;
+    border-radius: 5px;
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -1205,6 +1205,10 @@ input:checked + .toggle-slider:before {
 }
 .testimonial-item .overlay p
 {
+  color: white;
+  border: white 2px solid;
+  border-radius: 50%;
+  padding:5px 9px;
   margin:0 0 0px;
 }
 .testimonial-item:hover img {
@@ -1218,7 +1222,7 @@ input:checked + .toggle-slider:before {
     width: 100%;
     text-align:center;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);  /* Light overlay for content visibility */
+    background: rgba(0, 0, 0, 0.575);  /* Light overlay for content visibility */
     color: #fff;
     display: flex;
     flex-direction: column;
