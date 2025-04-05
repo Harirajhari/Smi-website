@@ -344,7 +344,6 @@ filter: brightness(100);
 
 /* about redeisgn */
 .about-abtNew {
-  padding: 50px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -398,7 +397,7 @@ filter: brightness(100);
   color: white;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  height: 200px;
+  height: 300px;
 }
 
 .intro-box-abtNew::before {
@@ -408,10 +407,12 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background: linear-gradient(45deg, #edb106, #b20d0c); /* Gradient overlay */
+background: linear-gradient(45deg, #edaf06cc, #b20c0cd0); /* Gradient overlay */
 opacity: 0.8; /* Adjust transparency */
 z-index: 1; /* Ensure it's above the background but below the content */
 }
+
+
 
 .intro-box-abtNew h2 {
   margin: 0;
