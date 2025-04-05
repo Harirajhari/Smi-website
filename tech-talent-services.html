@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Title -->
-  <title>SMI-One Stop IT Staffing and Solutioning Vendors</title>
+  <title>SMI-Tech-Talent-Services</title>
 
   <!-- Favicon Icon -->
   <link rel="shortcut icon" href="images/smi-icon.webp" />
@@ -63,6 +63,11 @@
 Icon for services and Projects -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flaticon@2.1.0/css/flaticon.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
 
 
 
@@ -137,7 +142,8 @@ Icon for services and Projects -->
           <div class="container">
             <div class="row justify-content-center text-center">
               <div class="col-xl-10 col-lg-12 col-12">
-                <h1 class="mb-4 mt-0" style="font-size: clamp(16px, 5vw, 40px);">
+                <h1>Tech talent services</h1>
+                <h1 style="font-size: clamp(10px, 4vw, 30px) !important;">
                   One Stop IT Staffing and Solutioning Vendors
                 </h1>
                 
@@ -494,13 +500,17 @@ Icon for services and Projects -->
 <div class="core-verticals-section">
   <h2 class="core-tech-heading">Core Verticals Supported</h2>
   <div class="core-verticals-grid">
-    <div class="vertical"><span>🏦</span> Banking</div>
-    <div class="vertical"><span>🏛</span> Government</div>
-    <div class="vertical"><span>💻</span> IT</div>
-    <div class="vertical"><span>📞</span> Telecom</div>
-    <div class="vertical"><span>🛍</span> Retail</div>
-    <div class="vertical"><span>🏭</span> Manufacturing</div>
-  </div>
+    <div class="vertical"><i class="material-icons">account_balance</i> Banking</div>
+    <div class="vertical"><i class="material-icons">gavel</i> Government</div>
+    <div class="vertical"><i class="material-icons">computer</i> IT</div>
+    <div class="vertical"><i class="material-icons">phone</i> Telecom</div>
+    <div class="vertical"><i class="material-icons">store</i> Retail</div>
+    <div class="vertical"><i class="material-icons">factory</i> Manufacturing</div>
+</div>
+
+
+
+
 </div>
 
 <style>
@@ -607,8 +617,8 @@ Icon for services and Projects -->
             <div class="smi-specialization">
               <h2>AI-Based Technologies</h2>
               <p>
-                Machine learning, natural language processing, computer vision, and LLM
-                innovation and efficiency.
+                Machine learning, Natural Language Processing, Computer Vision, and LLM
+                
               </p>
             </div>
             <div class="smi-specialization">
@@ -643,7 +653,7 @@ Icon for services and Projects -->
           max-width: 1100px;
           margin: 0 auto;
           padding-top: 2rem;
-          font-family: 'Arial', sans-serif;
+         
         }
 
         /* Heading Styling */
@@ -829,8 +839,6 @@ Icon for services and Projects -->
 
 <style>
   .smi-tt-video{
-
-    
   .smi-tech-talent-video-section {
     background-color: #0d0d0d;
       display: flex;
@@ -878,8 +886,6 @@ Icon for services and Projects -->
       opacity: 0;
   }
 
-  
-
   @media (max-width: 768px) {
       .smi-tech-talent-video-section {
           flex-direction: column; /* Stack videos vertically */
@@ -902,9 +908,9 @@ Icon for services and Projects -->
           font-size: 16px; /* Reduce text size */
       }
       .play-pause-btn {
-        top: 31%;
-        font-size: 24px;
-        padding: 24px 23px;
+        top: 30%;
+          font-size: 20px;
+          padding: 10px 15px;
       }
   }
 
@@ -914,7 +920,7 @@ Icon for services and Projects -->
 <section class="smi-tt-video">
   <div class="smi-tech-talent-video-section">
     <div class="video-card">
-        <video id="video1" controls controlsList="nodownload ">
+        <video id="video1" controls controlsList="nodownload">
             <source src="images/Staff-Augmentation-low-res.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -1885,7 +1891,7 @@ document.getElementById("cvModal").style.display = "none";  // This will close t
       storage.createFile("67eb8cd60012787fe46e", Appwrite.ID.unique(), file)
         .then((fileUpload) => {
           // Get the file URL
-          const fileUrl = `https://cloud.appwrite.io/v1/storage/buckets/67eb8cd60012787fe46e/files/${fileUpload.$id}/view`;
+          const fileUrl = https://cloud.appwrite.io/v1/storage/buckets/67eb8cd60012787fe46e/files/${fileUpload.$id}/view;
           resolve(fileUrl);
         })
         .catch((error) => {
