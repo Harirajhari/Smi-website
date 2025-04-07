@@ -116,7 +116,7 @@ Icon for services and Projects -->
     </div>
 
      <!-- Quote content,button section -->
-    <div class="quote-section-robotic">
+    <div class="quote-section-robotic" style="background-color: #1c1c1c;">
         <p class="quote-heading-robotic">Robotic Process Automation – <span class="quote-span-robotic">Every Business, Any Process</span></p>
         <h6 class="quote-description-robotic">
             Bautomate’s robotic process automation platform supports AI capabilities to meet business needs without a significant upfront investment. An easy-to-use platform with a low-code implementation allows it to adapt to changing business environments.
@@ -154,76 +154,179 @@ Icon for services and Projects -->
     
 
 
-    <section class="benefits-business benefits-robotics" >
-        <div class="container ">
-          <div class="row">
-            <div class="col-12 col-lg-4">
-              <div class="theme-title ">
-                <h6>Benefits</h6>
-                <h2>What are the Robotic Process Automation
-                     Benfits</h2>
-              </div>
-            </div>
-            <div class="col-12 col-lg-8 ps-lg-8 mt-5 mt-lg-0">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="featured-item style-1">
-                    <div class="featured-icon">
-                        <i class="fas fa-cogs"></i>
-
-                    </div>
-                    <div class="featured-description">
-                      <div class="featured-title">
-                        <!-- <h5>Task Automation</h5> -->
-                      </div>
-                      <p>With robotic process automation, businesses can accommodate the specific needs of certain objectives that align with their goals.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="featured-item style-1">
-                    <div class="featured-icon">
-                        <i class="fas fa-link"></i>
-                    </div>
-                    <div class="featured-description">
-                      <div class="featured-title">
-                        <!-- <h5>Automated Efficiency</h5> -->
-                      </div>
-                      <p>Unlike manual tasks, the bot is limited to specific tasks, ensuring no information leaks between components.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="featured-item style-1">
-                    <div class="featured-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="featured-description">
-                      <div class="featured-title">
-                        <!-- <h5>ML Precision</h5> -->
-                      </div>
-                      <p>With the combination of human labor and RPA tools, the costs of an operation can be reduced significantly.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="featured-item style-1">
-                    <div class="featured-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="featured-description">
-                      <div class="featured-title">
-                        <!-- <h5>NLP Insights</h5> -->
-                      </div>
-                      <p>High-volume businesses need help with maintaining accurate data and accounting practices. RPA could ease the burden.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <section class="custom-benefits-section">
+      <!-- Left Section: Benefits (2/3) -->
+      <div class="custom-benefits-container">
+        <h2 class="custom-title custom-gradient-text">Benefits</h2>
+        <div class="custom-benefit-item">
+          <i class="fas fa-robot custom-icon"></i>
+          <p style="margin: 0 !important;">With robotic process automation, businesses can accommodate the specific needs of certain objectives that align with their goals.</p>
         </div>
-      </section>
+        <div class="custom-benefit-item">
+          <i class="fas fa-shield-alt custom-icon"></i>
+          <p style="margin: 0 !important;">Unlike manual tasks, the bot can perform only certain tasks, so there is no worry that any information will leak from one component to another.</p>
+        </div>
+        <div class="custom-benefit-item">
+          <i class="fas fa-coins custom-icon"></i>
+          <p style="margin: 0 !important;">With the combination of human labor and RPA tools, the costs of an operation can be reduced significantly.</p>
+        </div>
+        <div class="custom-benefit-item">
+          <i class="fas fa-calculator custom-icon"></i>
+          <p style="margin: 0 !important;">High-volume businesses need help with maintaining accurate data and accounting practices. RPA could ease the burden.</p>
+        </div>
+      </div>
+    
+      <!-- Right Section: Features (1/3) -->
+      <div class="custom-feature-container">
+        <div class="custom-feature-item">
+          <i class="fas fa-piggy-bank custom-icon"></i>
+          <h3>Generate <span>Savings</span></h3>
+          <p>Reduce operational costs</p>
+        </div>
+       
+        <div class="custom-feature-item">
+          <i class="fas fa-expand-arrows-alt custom-icon"></i>
+          <h3>Scale <span>Up or Down</span></h3>
+          <p>Manage any workload instantly</p>
+        </div>
+        <div class="custom-feature-item">
+          <i class="fas fa-handshake custom-icon"></i>
+          <h3>Shared <span>Services</span></h3>
+          <p>Work faster and more efficiently</p>
+        </div>
+      </div>
+    </section>
+    
+    
+    <style>
+    /* Base Styles */
+    .custom-benefits-section {
+      background: #1a1a1c;
+      display: flex;
+      gap: 30px;
+      padding: 40px;
+      align-items: start;
+      color: white;
+    }
+    
+    /* Benefits Section (Left) */
+    .custom-benefits-container {
+      flex: 2; /* Takes 2/3 width */
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .custom-title {
+      background: linear-gradient(45deg, #edb106, #b20d0c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+      
+    }
+    
+    .custom-benefit-item {
+      display: flex;
+      background-color: #333;
+      align-items: center;
+      padding: 15px;
+      border: 2px solid #edaf065a;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      transition: transform 0.3s;
+    }
+    
+    .custom-benefit-item:hover {
+      transform: scale(1.05);
+    }
+    
+    .custom-icon {
+      font-size: 30px;
+      background: linear-gradient(45deg, #edb106, #b20d0c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-right: 15px;
+    }
+    
+    
+    
+    /* Features Section (Right) */
+    .custom-feature-container {
+      
+      flex: 1; /* Takes 1/3 width */
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: space-evenly;
+      align-items: space-between;
+      
+    }
+    
+    .custom-feature-item {
+      background: white;
+      border-radius: 15px 0px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+      padding: 20px;
+      text-align: center;
+      min-width: 350px;
+      transition: transform 0.3s ease;
+    }
+    
+    .custom-feature-item:hover {
+      transform: translateY(-5px);
+    }
+    
+    .custom-feature-item h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 10px;
+    }
+    
+    .custom-feature-item h3 span {
+      color: #edb106;
+      font-weight: 700;
+    }
+    
+    .custom-feature-item p {
+      font-size: 14px;
+      color: #333;
+      margin: 0 !important;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+      .custom-benefits-section {
+        flex-direction: column;
+      }
+      .custom-benefits-container,
+      .custom-feature-container {
+        width: 100%;
+      }
+      .custom-feature-container{
+        flex-direction: row;
+      }
+      .custom-feature-item {
+        min-width:200px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .custom-benefit-item {
+        flex-direction: column;
+        text-align: center;
+      }
+      .custom-feature-container{
+        flex-direction: column;
+      }
+    }
+    </style>
+    
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
 
 
     <section class="Industries-robotics ">

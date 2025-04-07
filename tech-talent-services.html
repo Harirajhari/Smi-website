@@ -1891,7 +1891,7 @@ document.getElementById("cvModal").style.display = "none";  // This will close t
       storage.createFile("67eb8cd60012787fe46e", Appwrite.ID.unique(), file)
         .then((fileUpload) => {
           // Get the file URL
-          const fileUrl = https://cloud.appwrite.io/v1/storage/buckets/67eb8cd60012787fe46e/files/${fileUpload.$id}/view;
+          const fileUrl = `https://cloud.appwrite.io/v1/storage/buckets/67eb8cd60012787fe46e/files/${fileUpload.$id}/view`;
           resolve(fileUrl);
         })
         .catch((error) => {
