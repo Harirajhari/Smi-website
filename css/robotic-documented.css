@@ -1092,10 +1092,10 @@ background-clip: text;
 }
 
 .core-functions-functions li:hover {
-    background-color: #063970;
+    background-color: #705406;
     color: white;
     transform: translateX(5px);
-    border-bottom: 2px solid #154c79; /* Add this line to change the border color on hover */
+    border-bottom: 2px solid #796715; /* Add this line to change the border color on hover */
 }
 
 
